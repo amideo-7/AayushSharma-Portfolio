@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "averta cy w10";
+    font-family: monospace;
 }
 
 *::selection {
@@ -79,7 +79,7 @@ html, body{
 }
 
 #homemain .headings h1{
-    font-size: 4.5vw;
+    font-size: 4vw;
     color: transparent;
     -webkit-text-stroke: 1px #000;
     font-weight: 900;
