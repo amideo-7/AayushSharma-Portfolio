@@ -44,7 +44,7 @@ html, body{
 #nav #menu{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 40px;
 }
 
 #nav a{
@@ -534,4 +534,26 @@ filter: url(#noise);
 #list a{
     text-decoration: none;
     color: #fff;
+}
+
+
+.loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #4bedc2;
+    width: 0%;
+    height: 100%;
+}
+
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
 }

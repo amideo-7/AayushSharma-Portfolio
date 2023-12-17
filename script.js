@@ -4,6 +4,9 @@ Shery.hoverWithMediaCircle(".hvr", {
     images: ["images/DA.webp", "images/ML.webp", "images/DS.webp", "images/personalProjects.webp"],
 });
 
+// Shery.hoverWithMediaCircle(".hvr1", {
+//     images: ["images/education.jpg"],
+// });
 
 const lenis = new Lenis()
 
@@ -167,6 +170,34 @@ splitTypes1.forEach((char,i) => {
     })
 })
 
+const splitTypes12 = document.querySelectorAll('.reveal-type3')
+
+splitTypes12.forEach((char,i) => {
+
+    const bg = char.dataset.bgColor
+    const fg = char.dataset.fgColor
+
+    const text = new SplitType(char, { types: 'chars'})
+
+    gsap.fromTo(text.chars, 
+        {
+            color: bg,
+        },
+        {
+            color: fg,
+            duration: 0.3,
+            stagger: 0.02,
+            scrollTrigger: {
+                trigger: char,
+                start: 'top 100%',
+                end: 'top 20%',
+                scrub: true,
+                markers: false,
+                toggleActions: 'play play reverse reverse'
+            }
+    })
+})
+
 
 const lenis2 = new Lenis()
 
@@ -231,3 +262,66 @@ function fadeInImage5() {
 function fadeOutImage5() {
     document.getElementById("bottomimg5").style.opacity = 0;
 }
+
+
+// New
+
+
+function delay(n) {
+    n = n || 2000;
+    return new Promise((done) => {
+        setTimeout(() => {
+            done();
+        }, n);
+    });
+}
+
+function pageTransition() {
+    var tl = gsap.timeline();
+    tl.to(".loading-screen", {
+        duration: 1.2,
+        width: "100%",
+        left: "0%",
+        ease: "Expo.easeInOut",
+    });
+
+    tl.to(".loading-screen", {
+        duration: 1,
+        width: "100%",
+        left: "100%",
+        ease: "Expo.easeInOut",
+        delay: 0.3,
+    });
+    tl.set(".loading-screen", { left: "-100%" });
+}
+
+function contentAnimation() {
+    var tl = gsap.timeline();
+    tl.from(".animate-this", { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 });
+}
+
+$(function () {
+    barba.init({
+        sync: true,
+
+        transitions: [
+            {
+                async leave(data) {
+                    const done = this.async();
+
+                    pageTransition();
+                    await delay(1000);
+                    done();
+                },
+
+                async enter(data) {
+                    contentAnimation();
+                },
+
+                async once(data) {
+                    contentAnimation();
+                },
+            },
+        ],
+    });
+});
