@@ -182,10 +182,6 @@ animation: pulse 800ms forwards;
     -webkit-text-stroke: 1px #fff;
 }
 
-.elem{
-    margin-bottom: 20%;
-}
-
 .elem .text{
     padding: 5vw 12vw;
 }
@@ -205,6 +201,45 @@ animation: pulse 800ms forwards;
 
 .elem .text h4{
     opacity: .5;
+}
+
+.elem-bottom{
+    margin-bottom: 30vh;
+}
+
+.elem-bottom .text{
+    padding: 10vh 12vw;
+}
+
+.elem-bottom .text h3{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+.elem-bottom .text h1{
+    font-size: 1.5vw;
+    line-height: 1;
+    font-weight: 600;
+    margin: 1.5vw 0;
+}
+
+#contact{
+    margin-top: 10vh;
+    padding: 15vh 11.5vw;
+    line-height: 1;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+#contact>h1{
+    line-height: 1;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+#contact>h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
 }
 
 #bottomsection{
