@@ -41,8 +41,8 @@ gsap.to('.char', {
 let tl1 = gsap.timeline({
     scrollTrigger: {
         trigger: '.text1',
-        start: '35% 80%',
-        end: 'bottom 50%',
+        start: '35% 100%',
+        end: 'bottom 70%',
         scrub: true,
         markers: false
     }
@@ -56,8 +56,8 @@ tl1.to('.text1', {
 let tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: '.text2',
-        start: '35% 80%',
-        end: 'bottom 50%',
+        start: '35% 100%',
+        end: 'bottom 70%',
         scrub: true,
         markers: false
     }
@@ -70,8 +70,8 @@ tl2.to('.text2', {
 let tl3 = gsap.timeline({
     scrollTrigger: {
         trigger: '.text3',
-        start: '35% 80%',
-        end: 'bottom 50%',
+        start: '35% 100%',
+        end: 'bottom 70%',
         scrub: true,
         markers: false
     }
@@ -84,8 +84,8 @@ tl3.to('.text3', {
 let tl4 = gsap.timeline({
     scrollTrigger: {
         trigger: '.text4',
-        start: '35% 80%',
-        end: 'bottom 50%',
+        start: '35% 100%',
+        end: 'bottom 70%',
         scrub: true,
         markers: false
     }
@@ -325,3 +325,4 @@ $(function () {
         ],
     });
 });
+

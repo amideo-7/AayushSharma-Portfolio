@@ -110,17 +110,12 @@ html, body{
     animation-range: entry 80% cover 20%;
 }
 
-@keyframes fade{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
 #projects{
     padding: 0vw 15vw;
+}
+
+#projects .pheadings .personalpro{
+    opacity: 0;
 }
 
 .pheadings>h1{
@@ -129,7 +124,7 @@ html, body{
     font-weight: 400;
 }
 
-.pheadings>h1:nth-child(2){
+.pheadings .stroke{
     color: transparent;
     -webkit-text-stroke: 1px #000;
 }
@@ -156,7 +151,7 @@ html, body{
 }
 
 .text1{
-    width: 45%;
+    width: 50%;
     /* display: flex; */
     position: relative;
     left: -870px;
@@ -196,7 +191,7 @@ html, body{
 }
 
 .text2{
-    width: 45%;
+    width: 50%;
     /* display: flex; */
     position: relative;
     left: -870px;
@@ -236,7 +231,7 @@ html, body{
 }
 
 .text3{
-    width: 45%;
+    width: 50%;
     /* display: flex; */
     position: relative;
     left: -870px;
@@ -276,7 +271,7 @@ html, body{
 }
 
 .text4{
-    width: 45%;
+    width: 50%;
     /* display: flex; */
     position: relative;
     left: -870px;
@@ -342,6 +337,14 @@ animation: pulse 800ms ease-in-out;
 filter: url(#noise);
 }
 
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
 @media(max-width: 768px) {
 #card {
@@ -349,8 +352,6 @@ filter: url(#noise);
 }
 }
   
-
-
 .btndiv{
     display: flex;
     align-items: center;
@@ -369,7 +370,12 @@ filter: url(#noise);
 
 #certificates{
     width: 100%;
-    padding: 2vw 15vw;
+    padding: 1vw 15vw;
+}
+
+#certificates .commitment{
+    position: relative;
+    opacity: 0;
 }
 
 #certificates h1{
@@ -537,23 +543,245 @@ filter: url(#noise);
 }
 
 
-.loading-screen {
-    position: relative;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    background-color: #4bedc2;
-    width: 0%;
-    height: 100%;
-}
 
-.load-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 10;
-    pointer-events: none;
+@media(max-width: 720px){
+
+    #nav{
+        padding: 20px 20px;
+    }
+
+    #nav #right {
+        gap: 10px;
+    }
+
+    #nav a{
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+    #menu i {
+        margin-top: 3px;
+        font-size: 10px;
+    }
+
+    #nav #menu{
+        gap: 10px;
+    }
+
+    #logo{
+        font-size: 3.5vw;
+    }
+
+    #home #homemain{
+        width: 100%;
+        padding: 20vw 15vw;
+    }
+    #homemain h1{
+        font-size: 2vw;
+    }
+    .headings{
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+    }
+    #homemain .headings h1{
+        font-size: 7vw;
+    }
+    #homeabout{
+        margin-bottom: 0vw;
+    }
+    #homeabout p {
+        width: 80%;
+        font-size: 2vw;
+    }
+
+    #projects{
+        padding: 0vw 15vw;
+    }
+
+    #projects .pheadings .personal{
+        opacity: 0;
+    }
+
+    #projects .pheadings .personalpro{
+        opacity: 1;
+    }
+
+    #projects .pheadings .hvr {
+        position: relative;
+        padding-top: 0px;
+        top: -15px;
+    }
+    .pheadings{
+        margin-top: 20vw;
+    }
+    .pheadings>h1{
+        line-height: 1;
+        font-size: 6vw;
+        font-weight: 400;
+    }
+    
+    .pheadings>h1:nth-child(2){
+        color: transparent;
+        -webkit-text-stroke: 0.5px #000;
+    }
+
+    #projectimages{
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 2vw;
+        margin-bottom: 5vw;
+    }
+    
+    .pleftelem{
+        gap: 15vw;
+        flex-direction: column;
+    }
+
+    .text1{
+        width: 100%;
+        left: -800px;
+    }
+    
+    .text1 h1{
+        font-size: 3vw;
+    }
+    
+    .text1 h3{
+        font-size: 2.5vw;
+    }
+    
+    .text1 h4{
+        font-size: 2.5vw;
+    }
+    
+    .text2{
+        width: 100%;
+        left: -800px;
+    }
+    
+    .text2 h1{
+        font-size: 3vw;
+    }
+    
+    .text2 h3{
+        font-size: 2.5vw;
+    }
+    
+    .text2 h4{
+        font-size: 2.5vw;
+    }
+
+    .text3{
+        width: 100%;
+        left: -800px;
+    }
+    
+    .text3 h1{
+        font-size: 3vw;
+    }
+    
+    .text3 h3{
+        font-size: 2.5vw;
+    }
+    
+    .text3 h4{
+        font-size: 2.5vw;
+    }
+    .text4{
+        width: 100%;
+        left: -800px;
+    }
+    
+    .text4 h1{
+        font-size: 3vw;
+    }
+    
+    .text4 h3{
+        font-size: 2.5vw;
+    }
+    
+    .text4 h4{
+        font-size: 2.5vw;
+    }
+    
+    .btndiv button {
+        padding: 2vw 3vw;
+        border: 1px solid #e6e6e6;
+        font-size: 2vw;
+    }
+
+    #certificates{
+        margin-top: 20vw;
+        padding: 10vw 15vw;
+    }
+
+    #certificates .commit{
+        opacity: 0;
+    }
+
+    #certificates .commitment{
+        opacity: 1;
+        animation: fade linear both;
+        animation-timeline: view();
+        animation-range: entry 80% cover 20%;
+        position: relative;
+        top: 25px;
+    }
+    
+    #certificates h1{
+        font-size: 6vw;
+        width: 90%;
+    }
+    
+    #certificates p{
+        margin-top: 0px;
+        width: 95%;
+        font-size: 2vw;
+    }
+    
+    #slides {
+        padding: 3vw 10vw;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 10vw;
+    }
+    
+    .slide {
+        width: 100%;
+    }
+    
+    .slide .img {
+        height: 140px;
+    }
+    
+    .slide .tag {
+        padding: 5px 10px;
+        margin: 10px 0;
+        font-size: 2vw;
+    }
+    
+    .slide h3 {
+        font-size: 3vw;
+        padding-left: 2px;
+    }
+
+    .bottombtn{
+        margin-bottom: 5vw;
+    }
+    
+    .pheadings .hvr{
+        padding-top: 190px;
+    }
+    
+    .viewall{
+        padding-bottom: 5vw;
+    }
+    
+    #list ul {
+        gap: 40px;
+        flex-direction: column;
+        font-size: 3vw;
+    }
+    
 }
