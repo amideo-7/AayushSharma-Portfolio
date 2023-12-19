@@ -577,7 +577,8 @@ filter: url(#noise);
         padding: 20vw 15vw;
     }
     #homemain h1{
-        font-size: 2vw;
+        font-size: 4vw;
+        margin-bottom: 2vw;
     }
     .headings{
         display: flex;
@@ -585,14 +586,14 @@ filter: url(#noise);
         gap: 75px;
     }
     #homemain .headings h1{
-        font-size: 7vw;
+        font-size: 10vw;
     }
     #homeabout{
         margin-bottom: 0vw;
     }
     #homeabout p {
-        width: 80%;
-        font-size: 2vw;
+        width: 90%;
+        font-size: 3vw;
     }
 
     #projects{
