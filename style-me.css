@@ -145,12 +145,16 @@ animation: pulse 800ms forwards;
 }
 
 #intro p {
-    width: 95%;
+    width: 90%;
     font-size: 1vw;
     font-weight: 100;
     animation: fade 800ms linear both;
     animation-timeline: view();
     animation-range: entry 80% cover 20%;
+}
+
+#righthome #intro p span{
+    margin: 15px 0px;
 }
 
 @keyframes fade{

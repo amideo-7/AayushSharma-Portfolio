@@ -1,7 +1,7 @@
 Shery.mouseFollower();
 Shery.makeMagnet(".magnet");
 Shery.hoverWithMediaCircle(".hvr", {
-    images: ["images/DA.webp", "images/ML.webp", "images/DS.webp", "images/personalProjects.webp"],
+    images: ["images/DA.jpg", "images/ML.jpg", "images/DS.jpg", "images/personalProjects.jpg"],
 });
 
 // Shery.hoverWithMediaCircle(".hvr1", {
